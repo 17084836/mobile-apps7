@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, ToastAndroid, View } from 'react-native';
+import { Button, ToastAndroid, View, TouchableOpacity, StyleSheet } from 'react-native';
 import { ScrollView, TextInput, TouchableHighlight, Text } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -66,6 +66,11 @@ class LoginScreen extends Component{
     }
     render() {
         return (
+
+        
+
+
+
            <View>
       <TextInput
       placeholder="Please enter your email"
@@ -79,12 +84,32 @@ class LoginScreen extends Component{
       value={this.state.password}
       style={{padding:5, borderWidth:1, margin:10}}
       />
+
       <Button
       title="Login"
       onPress={() =>  this.login()}
       />
       </View>
-        );
+
+
+
+
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 

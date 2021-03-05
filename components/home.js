@@ -12,7 +12,9 @@ class Home extends Component{
        <Text style={styles.text}>Home</Text>
 
 
-      
+
+
+
 
       </View>
     );
@@ -31,5 +33,7 @@ const styles = StyleSheet.create({
     fontSize: 25
   }
 });
+
+
 
 export default Home;

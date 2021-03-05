@@ -27,8 +27,8 @@ class App extends Component {
        <Drawer.Screen name="About" component={About} />
        <Drawer.Screen name="Contact" component={Contact} />
 
-<Drawer.Screen name="SignupScreen" component={SignupScreen} />
-<Drawer.Screen name="LoginScreen" component={LoginScreen} />
+<Drawer.Screen name="Sign Up" component={SignupScreen} />
+<Drawer.Screen name="Login" component={LoginScreen} />
 <Drawer.Screen name="Logout" component={Logout} />
 
 <Drawer.Screen name="Location" component={Location} />

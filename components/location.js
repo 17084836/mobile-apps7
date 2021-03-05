@@ -37,6 +37,8 @@ class Location extends Component{
       location: null,
       locationPermission: false
     }
+
+    
   }
 
   findCoordinates(){

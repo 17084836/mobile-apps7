@@ -13,7 +13,7 @@ import React, { Component } from 'react';
  checkLoggedIn = async () => {
    const value = await AsyncStorage.getItem('@session_token');
    if (value == null) {
-       this.props.navigation.navigate('LoginScreen');
+       this.props.navigation.navigate('Login');
    }
  }
 
@@ -31,11 +31,11 @@ import React, { Component } from 'react';
       if(response.status === 200){
         ToastAndroid.show("The logout has been Successful!",ToastAndroid.SHORT,
         ToastAndroid.CENTER);
-        this.props.navigation.navigate("LoginScreen");
+        this.props.navigation.navigate("Login");
       }
        else if (response.status ===401){
         ToastAndroid.show("You Are Currently Not Logged In!",ToastAndroid.SHORT,ToastAndroid.CENTER);
-        this.props.navigation.navigate("LoginScreen");
+        this.props.navigation.navigate("Login");
       }
       else{
         throw 'Something went wrong';
@@ -45,7 +45,7 @@ import React, { Component } from 'react';
       console.log("Logged out now!" , responseJson);
       AsyncStorage.removeItem('@session_token');
       AsyncStorage.removeItem('@user_id');
-      this.props.navigation.navigate("LoginScreen");
+      this.props.navigation.navigate("Login");
 
     })
     .catch((error) => {
