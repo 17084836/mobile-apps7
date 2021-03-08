@@ -12,7 +12,7 @@ import SignupScreen from './components/signup';
 import LoginScreen from './components/login';
 import Logout from './components/logout';
 
-import Location from './components/location';
+import Map from './components/map';
 
 //import Home from './components/home_with_buttons';
 
@@ -31,7 +31,7 @@ class App extends Component {
 <Drawer.Screen name="Login" component={LoginScreen} />
 <Drawer.Screen name="Logout" component={Logout} />
 
-<Drawer.Screen name="Location" component={Location} />
+<Drawer.Screen name="Map" component={Map} />
 
     </Drawer.Navigator>
   </NavigationContainer>

@@ -28,7 +28,7 @@ async function requestLocationPermission(){
 }
 
 
-class Location extends Component{
+class Map extends Component{
 
   constructor(props){
     super(props);
@@ -38,7 +38,7 @@ class Location extends Component{
       locationPermission: false
     }
 
-    
+
   }
 
   findCoordinates(){
@@ -80,4 +80,4 @@ class Location extends Component{
 
 
 
-export default Location;
+export default Map;
